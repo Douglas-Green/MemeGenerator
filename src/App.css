@@ -1,0 +1,89 @@
+/** @format */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+  background-color: #121212;
+}
+
+.meme-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.meme-form input,
+.meme-form select {
+  margin-bottom: 10px;
+  background-color: #555;
+  color: gold;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.meme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meme img {
+  max-width: 100%;
+  height: auto;
+}
+
+.meme .top,
+.meme .bottom {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  font-family: Arial;
+  color: #ffffff;
+  text-shadow: 2px 2px 0 #000000;
+}
+
+.meme .top {
+  top: 10px;
+}
+
+.meme .bottom {
+  bottom: 10px;
+}
+
+.modal .meme {
+  position: relative;
+  text-align: center;
+}
+
+.modal .meme h2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.modal .meme .top {
+  top: 20px;
+}
+
+.modal .meme .bottom {
+  bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .meme .top,
+  .meme .bottom {
+    font-size: 18px;
+  }
+}
